@@ -60,3 +60,6 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_ENABLE_BLUR := true
 BUILD_WITH_GAPPS := true
 SUPERIOR_UDFPS_ANIMATIONS := true
+
+# Oplus Camera
+$(call inherit-product, vendor/oneplus/camera/oneplus-camera.mk)
