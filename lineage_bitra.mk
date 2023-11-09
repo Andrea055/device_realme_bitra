@@ -47,4 +47,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := realme/RMX3370/RE879AL1:13/TP1A.220905.001/R.f6f367-1_64ac:user/release-keys
 
 # Oplus Camera
-$(call inherit-product, vendor/oneplus/camera/oneplus-camera.mk)
+#$(call inherit-product, vendor/oneplus/camera/oneplus-camera.mk)
