@@ -18,9 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Elixir stuff
-#$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common Lineage stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Bootanimation resolution
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -29,7 +28,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := xtended_bitra
+PRODUCT_NAME := lineage_bitra
 PRODUCT_DEVICE := bitra
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := Realme GT Neo 2
@@ -46,20 +45,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
 BUILD_FINGERPRINT := realme/RMX3370/RE879AL1:13/TP1A.220905.001/R.f6f367-1_64ac:user/release-keys
-PRODUCT_OVERRIDE_GMS_FINGERPRINT := google/redfin/redfin:13/TQ1A.221205.011/9244662:user/release-keys
-
-# UDFPS animations
-EXTRA_UDFPS_ANIMATIONS := true
-
-# Superior OS stuff
-IS_PHONE := true
-TARGET_INCLUDE_PIXEL_CHARGER := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_STOCK_ACORE := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_ENABLE_BLUR := true
-BUILD_WITH_GAPPS := true
-SUPERIOR_UDFPS_ANIMATIONS := true
 
 # Oplus Camera
 $(call inherit-product, vendor/oneplus/camera/oneplus-camera.mk)

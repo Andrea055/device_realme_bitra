@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_bitra.mk
+    $(LOCAL_DIR)/lineage_bitra.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_bitra-user \
-    superior_bitra-userdebug \
-    superior_bitra-eng
+    lineage_bitra-user \
+    lineage_bitra-userdebug \
+    lineage_bitra-eng

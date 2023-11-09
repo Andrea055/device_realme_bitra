@@ -39,8 +39,7 @@ PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSystemUIResTarget \
-    XtendedFrameworksResCommon \
-    DeviceExtrasResTarget
+    OPlusExtrasResCommon
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
