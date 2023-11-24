@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_bitra.mk
+    $(LOCAL_DIR)/statix_bitra.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_bitra-user \
-    superior_bitra-userdebug \
-    superior_bitra-eng
+    statix_bitra-user \
+    statix_bitra-userdebug \
+    statix_bitra-eng
